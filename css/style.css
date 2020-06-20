@@ -1,0 +1,346 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: rgb(43,43,43);
+}
+
+#container
+{
+    width: 98%;
+    margin: 1% auto;
+}
+#center
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#up
+{
+    background: rgb(68,114,196);
+    width: 100%;
+}
+
+#up p
+{
+    margin-left: 3%;
+}
+
+#firstlevel
+{
+    background: rgb(68,114,196);
+    list-style: none;
+    padding: 1px;
+    color: #fff;
+    font-family: Arial;
+    font-variant: small-caps;
+    font-weight: bold;
+    width: 25%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.secondlevel
+{
+    padding-top: 10px;
+    list-style: none;
+    display: none;
+    
+}
+
+.secondlevel li
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    margin: 0 2%;
+}
+
+#firstlevel li:hover .secondlevel
+{
+    display: block;
+}
+
+#firstlevel li:hover .secondlevel li:hover
+{
+    background: rgba(29,51,99,0.9);
+}
+
+ul a
+{
+    color: #fff;
+}
+
+.gif
+{
+    padding-right: 20px;
+}
+
+#name
+{
+    color: #fff;
+    font-size: 200%;
+    font-family: Arial;
+    font-size: bold;
+    padding-top: 20px;
+}
+
+#description
+{
+    color: darkgrey;
+    font-size: 150%;
+    font-family: Arial;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+#left
+{
+    flex: 6;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+#left p
+{
+    margin: 3% auto 0;
+    font-size: Arial;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+#left h1
+{
+    margin: 2% auto 0;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid grey;
+}
+
+.table td
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+    font-family: Arial;
+}
+
+.table td:first-child
+{
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.employ
+{
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.company
+{
+    color: grey;
+    font-style: italic;
+    line-height: 150%;
+}
+
+.unorderlist
+{
+    margin-left: 10%;
+}
+
+.hide
+{
+    display: none;
+}
+
+label
+{
+    color: green;
+    font-weight: bold;
+    font-size: 200%;
+    cursor: pointer;
+    margin-left: 3%;
+    font-family: Arial;
+}
+
+#right
+{
+    margin-top: 5%;   
+    color: white;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    flex: 1;
+    padding: 10px;
+}
+
+#photo
+{
+    width: 30%;
+    float: left;
+    margin-bottom: 3%;
+    margin-right: 1%;
+}
+#dane
+{
+    display: none;
+}
+
+.personaldata
+{
+    width: 60%;
+    border-collapse: collapse;
+    
+    
+}
+
+.personaldata td
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.personaldata td a
+{
+    color: #fff;
+}
+
+.personaldata td a:hover
+{
+    color: #ccc;
+}
+
+.heading
+{
+    line-height: 150%;
+    font-family: Arial;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.bold
+{
+    font-size: 150%;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.skills
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5%;
+}
+
+.skills td
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.skills td:first-child
+{
+    width: 25%;
+    font-size: 120%;
+    font-family: Arial;
+}
+
+.skills td:last-child
+{
+    padding-left: 10px;
+}
+
+a
+{
+    font-family: Arial;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (orientation: landscape)
+{
+    #center
+    {
+        flex-direction: row-reverse;
+    }
+    
+   
+    #photo
+    {
+        width: 80%;
+    }
+    
+    .table td
+    {
+         font-size: 140%;
+    }
+    
+    .personaldata
+    {
+        border-top: 1px solid grey;
+    }
+    
+    #left
+    {
+        padding: 20px;
+        flex: 5;
+    }
+    
+    #right
+    {
+        margin-top: 0;
+    }
+    #dane
+    {
+        clear: both;
+        display: block;
+    }
+       
+    .personaldata td
+    {
+        
+        display: block;
+    }
+    
+    .skills td:first-child
+    {
+        width: 40%;
+    }
+    
+    .star
+    {
+        width: 15%;
+    }
+    
+    #name
+    {
+        padding-top: 30px;
+    }
+    
+    #description
+    {
+        padding-bottom: 30px;
+    }
+    
+    #firstlevel
+{
+    
+    width: 15%;
+    
+}
+}
