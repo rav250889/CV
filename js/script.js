@@ -25,6 +25,8 @@ $("document").ready(
 
         }
         
+        showElements("euroimpex", "euroimpexClick");
+        
         showElements("protelnet", "protelnetClick");
         
         showElements("hem", "hemClick");
